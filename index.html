@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diesel Advocacy Pty Ltd — Australian Health Technology</title>
+<meta name="description" content="Diesel Advocacy Pty Ltd is an Australian private company building private, thoughtful digital health tools. ACN 690 643 853.">
+<meta name="author" content="Diesel Advocacy Pty Ltd">
+<link rel="canonical" href="https://dieseladvocacy.com.au/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Diesel Advocacy Pty Ltd — Australian Health Technology">
+<meta property="og:description" content="Australian private company building private, thoughtful digital health tools. ACN 690 643 853.">
+<meta property="og:url" content="https://dieseladvocacy.com.au/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_AU">
+
+<!-- Schema.org Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Diesel Advocacy Pty Ltd",
+  "url": "https://dieseladvocacy.com.au/",
+  "description": "Australian private company building digital health products.",
+  "email": "admin@dieseladvocacy.com.au",
+  "areaServed": "AU",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15 Pin Oak Circuit",
+    "addressLocality": "Branxton",
+    "addressRegion": "NSW",
+    "postalCode": "2335",
+    "addressCountry": "AU"
+  },
+  "identifier": [
+    { "@type": "PropertyValue", "name": "ACN", "value": "690 643 853" },
+    { "@type": "PropertyValue", "name": "ABN", "value": "82 690 643 853" }
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Same DNA as Ribbonside. Different role. */
+:root{
+  --cream:#FDFAF8;
+  --soft-bg:#F5F0EB;
+  --border:#E2D8D0;
+  --border2:#CFC4BC;
+  --charcoal:#1A0A10;
+  --muted:#6A5A50;
+  --soft:#9A8A80;
+  /* Corporate accent — charcoal, not pink */
+  --accent:#1A0A10;
+  --accent-mid:#2E2420;
+  --accent-light:#EDE8E4;
+  /* Pink appears ONLY on the Ribbonside product card */
+  --pink:#EB94AE;
+  --pink-mid:#FFF0F5;
+  --pink-border:#F2C4D4;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);font-family:'DM Sans',sans-serif;color:var(--charcoal);line-height:1.7;-webkit-font-smoothing:antialiased}
+
+/* ── NAV — corporate, no pink ── */
+nav{
+  padding:18px 7%;display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid var(--border);background:rgba(253,250,248,.96);
+  position:sticky;top:0;z-index:100;backdrop-filter:blur(12px)
+}
+.nav-brand{display:flex;align-items:center;gap:10px}
+.nav-rule{width:2px;height:28px;background:var(--charcoal);flex-shrink:0}
+.nav-name{font-family:'Lora',serif;font-size:15px;font-weight:600;color:var(--charcoal);letter-spacing:-.01em}
+.nav-sub{font-size:11px;color:var(--soft);font-weight:300;margin-top:1px}
+.nav-right{font-size:11px;color:var(--soft);font-weight:300;letter-spacing:.04em}
+
+/* ── HERO ── */
+.hero{padding:96px 7% 80px;max-width:1040px;margin:0 auto}
+.hero-eyebrow{
+  font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.16em;
+  color:var(--soft);margin-bottom:22px;font-family:'DM Sans',sans-serif;
+  display:flex;align-items:center;gap:10px
+}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--charcoal);display:inline-block}
+.hero-title{
+  font-family:'Lora',serif;font-size:clamp(34px,4.5vw,56px);font-weight:600;
+  color:var(--charcoal);letter-spacing:-.03em;line-height:1.08;margin-bottom:18px
+}
+.hero-tagline{
+  font-family:'Lora',serif;font-size:clamp(15px,1.8vw,18px);
+  color:var(--muted);font-style:italic;margin-bottom:14px
+}
+.hero-body{font-size:15px;font-weight:300;color:var(--soft);max-width:480px;line-height:1.8}
+
+/* ── DIVIDER ── */
+.divider{height:1px;background:var(--border);margin:0 7%}
+
+/* ── SECTIONS ── */
+.section{padding:76px 7%;max-width:1040px;margin:0 auto}
+.sec-label{
+  font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--soft);margin-bottom:22px;display:flex;align-items:center;gap:12px
+}
+.sec-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.body-text{font-size:15px;font-weight:300;color:var(--muted);line-height:1.8;max-width:620px}
+.body-text+.body-text{margin-top:16px}
+
+/* ── PRODUCT CARD — pink lives HERE only ── */
+.product-card{
+  background:#fff;border-radius:20px;padding:36px;
+  max-width:620px;margin-top:8px;
+  border:1px solid var(--pink-border);
+  box-shadow:0 4px 24px rgba(235,148,174,.07);
+  position:relative;overflow:hidden
+}
+.product-card::after{
+  content:'';position:absolute;top:-30px;right:-30px;
+  width:140px;height:140px;
+  background:radial-gradient(circle,rgba(235,148,174,.07),transparent 65%);
+  pointer-events:none
+}
+.product-label{
+  font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;
+  color:var(--pink);margin-bottom:10px;font-family:'DM Sans',sans-serif
+}
+.product-name{
+  font-family:'Lora',serif;font-size:26px;font-weight:600;
+  color:var(--charcoal);letter-spacing:-.02em;margin-bottom:3px
+}
+.product-tagline{
+  font-family:'Lora',serif;font-size:14px;color:#C09AAA;
+  font-style:italic;margin-bottom:18px
+}
+.product-hr{height:1px;background:var(--pink-border);margin-bottom:18px}
+.product-body{
+  font-size:14px;font-weight:300;color:var(--muted);
+  line-height:1.8;max-width:460px;margin-bottom:6px
+}
+.product-launch{font-size:13px;color:#C09AAA;margin-bottom:24px}
+.product-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--pink);color:#1A0A10;
+  border-radius:100px;padding:11px 22px;
+  font-size:13px;font-weight:600;text-decoration:none;
+  transition:opacity .2s;font-family:'DM Sans',sans-serif
+}
+.product-btn:hover{opacity:.88}
+
+.more-coming{
+  font-size:13.5px;color:var(--soft);font-style:italic;
+  margin-top:22px;max-width:620px;line-height:1.7
+}
+
+/* ── DETAILS — corporate, charcoal accents ── */
+.details-wrap{
+  max-width:560px;border:1px solid var(--border);
+  border-radius:14px;overflow:hidden;margin-top:8px
+}
+.det-row{display:flex;align-items:baseline;gap:20px;padding:13px 20px;border-bottom:1px solid var(--border)}
+.det-row:last-child{border-bottom:none}
+.det-row:nth-child(even){background:var(--soft-bg)}
+.det-label{
+  font-size:11px;font-weight:600;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--soft);min-width:120px;flex-shrink:0
+}
+.det-value{font-size:14px;color:var(--charcoal);font-weight:300}
+
+/* ── CONTACT ── */
+.contact-body{font-size:15px;font-weight:300;color:var(--muted);max-width:520px;line-height:1.8;margin-bottom:22px}
+.contact-link{
+  display:inline-flex;align-items:center;gap:10px;
+  color:var(--charcoal);font-size:14px;font-weight:500;
+  text-decoration:none;background:var(--accent-light);
+  border:1px solid var(--border2);border-radius:11px;
+  padding:12px 20px;transition:background .2s, color .2s
+}
+.contact-link:hover{background:var(--charcoal);color:var(--cream)}
+.contact-link svg{flex-shrink:0}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--charcoal);border-top:1px solid var(--border);
+  padding:26px 7%;display:flex;align-items:center;
+  justify-content:space-between;flex-wrap:wrap;gap:12px
+}
+.footer-brand{display:flex;align-items:center;gap:10px}
+.footer-rule{width:2px;height:20px;background:rgba(255,255,255,.25);flex-shrink:0}
+.footer-name{font-family:'Lora',serif;font-size:14px;font-weight:600;color:#fff}
+.footer-legal{font-size:11px;color:rgba(255,255,255,.4);line-height:1.6;text-align:right;max-width:440px}
+
+@media(max-width:640px){
+  nav{flex-direction:column;align-items:flex-start;gap:4px}
+  .hero,.section{padding-left:5%;padding-right:5%}
+  .divider{margin:0 5%}
+  footer{flex-direction:column;align-items:flex-start}
+  .footer-legal{text-align:left}
+  .product-card{padding:24px 20px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <div class="nav-rule"></div>
+    <div class="nav-text">
+      <div class="nav-name">Diesel Advocacy Pty Ltd</div>
+      <div class="nav-sub">Australian health technology</div>
+    </div>
+  </div>
+  <div class="nav-right">ACN 690 643 853</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">Diesel Advocacy Pty Ltd</div>
+  <h1 class="hero-title">Australian-built<br>health technology.</h1>
+  <p class="hero-tagline">We build private, thoughtful tools for people navigating their health.</p>
+  <p class="hero-body">Digital health products grounded in the lived realities of our users.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<div class="section">
+  <div class="sec-label">About us</div>
+  <p class="body-text">Diesel Advocacy Pty Ltd is an Australian private company, incorporated in New South Wales in 2025. We design and build digital health products grounded in the lived realities of our users — starting with people undergoing cancer treatment and the families who support them. Our work prioritises privacy, dignity, and clinical credibility.</p>
+  <p class="body-text">Diesel Advocacy is owner-operated, headquartered in regional New South Wales, and bound by Australian privacy law including the Privacy Act 1988 and the 13 Australian Privacy Principles.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- PRODUCTS -->
+<div class="section">
+  <div class="sec-label">Our ventures</div>
+  <div class="product-card">
+    <div class="product-label">Product · iOS Application</div>
+    <div class="product-name">Ribbonside</div>
+    <div class="product-tagline">Your people, by your side.</div>
+    <div class="product-hr"></div>
+    <p class="product-body">A private health companion for Australians navigating cancer. Ribbonside helps you keep track of your diagnosis, medications, appointments, and the people supporting you — all in one place, on your own device.</p>
+    <p class="product-launch">Launching on iPhone in 2026.</p>
+    <a href="https://ribbonside.com.au" class="product-btn">
+      Visit ribbonside.com.au
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+  </div>
+  <p class="more-coming">Additional products in development.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- COMPANY DETAILS -->
+<div class="section">
+  <div class="sec-label">Company details</div>
+  <div class="details-wrap">
+    <div class="det-row"><span class="det-label">Company</span><span class="det-value">Diesel Advocacy Pty Ltd</span></div>
+    <div class="det-row"><span class="det-label">ACN</span><span class="det-value">690 643 853</span></div>
+    <div class="det-row"><span class="det-label">ABN</span><span class="det-value">82 690 643 853</span></div>
+    <div class="det-row"><span class="det-label">Registered office</span><span class="det-value">15 Pin Oak Circuit, Branxton NSW 2335, Australia</span></div>
+    <div class="det-row"><span class="det-label">Incorporated</span><span class="det-value">3 September 2025</span></div>
+    <div class="det-row"><span class="det-label">Jurisdiction</span><span class="det-value">New South Wales, Australia</span></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<div class="section">
+  <div class="sec-label">Contact</div>
+  <p class="contact-body">For general enquiries about Diesel Advocacy or our ventures, please email us directly. We aim to reply within two business days.</p>
+  <a href="mailto:admin@dieseladvocacy.com.au" class="contact-link">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    admin@dieseladvocacy.com.au
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div class="footer-rule"></div>
+    <span class="footer-name">Diesel Advocacy Pty Ltd</span>
+  </div>
+  <div class="footer-legal">
+    © 2026 Diesel Advocacy Pty Ltd · ACN 690 643 853 · ABN 82 690 643 853<br>
+    Registered in New South Wales, Australia · Privacy Act 1988 compliant
+  </div>
+</footer>
+
+</body>
+</html>
